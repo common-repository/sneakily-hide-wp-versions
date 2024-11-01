@@ -1,0 +1,126 @@
+== Changelog ==                                                                                                    
+= 1.0.6 = 
+* Tags 
+
+= 1.0.5 =
+* Plugin Directory
+
+= 1.0.4 =
+* Combine everything into 1 file to avoid rwp_ prefix
+* Remove brain_base64.txt for now to save bandwidth
+* Avoid using function_exists everywhere (use different way of allowing customisation)
+* Escape more things
+* Never return incorrect / empty fake version from shwv_get_current_fake_wp_version()
+* Ensure decimal point in generated fake versions, incl after force-increase / _bump_()
+* Use argument swapping
+* Add reminder to remove rules in nginx
+* Use mu-plugin to hide version in /wp-admin/upgrade.php and /wp-admin/install.php
+* Unblock both upgrade.php and install.php since version hiding works there now
+* Common function to create settings page URL
+* Deactivation handles mu-plugin removal cleanly
+* Split fs ops/display form on deactivation too
+
+= 1.0.3 =
+* Use virtual pages instead of direct load-styles.php / load-scripts.php
+* Don't write abspath.php
+
+= 1.0.2 = 
+* Check again if abspath.php needed in shwv_write_abspath_file()
+
+= 1.0.1 =
+* Rename shwv_possibly_write_abspath() -> shwv_setup_wp_filesystem()
+
+= 1.0.0 =
+
+* (initial plugin directory release)
+* Fix bug where notices aren't displayed on activation
+* Clarify and make consistent API usage from rwp_functions
+* Escape things that are output
+* Use translation functions
+* Add testing document/checklist
+* Separate nginx and apache rewriting rules
+* Display nginx rewriting rules on plugin activation
+* Display htaccess rules on plugin activation, if not writable
+* Style web server config rules properly
+* Fix incorrect error message in rwp_handle_unwritable_file()
+* Hide Nginx version by default in displayed rules
+* Attempt to hide the Server header web server version, if possible
+* Update testing template to be more rigorous
+* load-styles.php works with WP 5.8
+* Add third color-code to RWP notices
+* Update nginx message and error display on activation
+* Use custom error handler for rwp_delete_with_markers()
+* Display web server / PHP / Apache version on settings page
+* Remove notice addition if install.php creation fails
+* Handle a few more cases in setting Server header
+* Add translatable strings to shwv.pot
+* Display fake WP version in settings page
+* Check for mod_rewrite if using Apache
+* Use Tools menu instead of top-level admin menu if no other RWP plugins present & activated
+* Don't duplicate URL prefix if WP installed in subdirectory, when rewriting load-script/load-styles
+* Remove web server & PHP version headers in load-scripts/load-styles; update comments in load-scripts/load-styles
+* load-scripts and load-styles find ABSPATH more intelligently
+* Check if get_home_path() exists before use (JSON API)
+* Add reminder on settings page about caches
+* Make ABSPATH determination more robust in custom load-* scripts
+* Look for wp-config.php a directory higher than ABSPATH in load-*
+* If certain errors happen during activation, activate anyway + display the errors so they can be fixed
+* Don't reinvent the wheel - use WP core function for web server detection
+* Check capabilities in more places (docs recommended https://developer.wordpress.org/reference/functions/update_option/)
+* Remove shwv_swap_files() call
+* Prevent rewriting load-* scripts until abspath.php in place, if abspath.php is needed
+* Don't hard-code URL to post from SHWV settings page
+* abspath.php creation via Filesystem API works
+* Refactor get creds into write-files and display-forms, at different points in WP load
+* Make options handling better wrt default false
+* Only display clear-caches message when activation complete
+* Don't assume SERVER_SOFTWARE and SERVER_SIGNATURE keys in $_SERVER
+* Remove unused code in rwp_functions.php
+* shwv_cap_check() becomes rwp_cap_check()
+* Wrap got_mod_rewrite() as well as get_home_path()
+* Handle WP < 5.6 upgrade of core / removing pluging rules from .htaccess
+* Also display permalink message if using index permalinks
+* Add note about manual upgrades to settings page
+* Rewrite to a customised upgrade.php to avoid upgrading problems with blocking
+* Combine functions to get rewrite URLs
+* Find ABSPATH in upgrade.php similar to load-*
+* Replace ie.css version in upgrade.php
+
+= 0.1.2 =
+* Move rwp_detect_web_server to rwp_functions.php
+* Display message to clear cache on activation
+* Show a message when fake version increased
+* Try not to display conflicting error messages if version bump fails
+* Don't write fake version file, use a mechanism that's more reliable in load-styles / load-scripts
+* Use a separate function for writing custom install.php
+* Code style updates to be consitent with WP standards
+* Add code to edit files between markers instead of overwriting entirely, use it when generating install.php
+
+= 0.1.0
+* Rename to "Sneakily Hide WP Versions"
+
+= 0.0.5 =
+* Add an error message system that can persist between page loads
+* Fix bugs with that error message system and replacement load-scripts / load-styles
+* Change logging to be consistent (hwv_debug_log())
+* Admin menus for the plugin with icon
+* Make the "fake" upgrade trigger not a URL trigger, instead use a link in the admin
+* Update / remove comments
+* Find ABSPATH if it's not defined in load-styles.php and load-scripts.php
+* Remove fake_version.php on deactivation
+
+= 0.0.4 =
+* Use a fake WP version in static asset URLs, so cache busting still works, but the real version is hidden
+* Include &amp;=ver in URLs to edit
+* Replace version in admin load-styles URLs
+
+= 0.0.3 =
+* Don't use .htaccess-based mechanism to block URLs, since it's risky
+
+= 0.0.2 =
+* Hide <generator> tags and other instances of the WP version in feeds
+* Block access to /readme.html and /license.txt to stop fingerprinting (and version grabbing from readme
+  in older WP) 
+
+= 0.0.1 =
+* Hide the <meta name="generator"> tag in HTML source

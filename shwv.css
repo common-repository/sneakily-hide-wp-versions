@@ -1,0 +1,16 @@
+.shwv-web-server-config code, 
+.shwv-web-server-config kbd
+{
+    background: none;
+    background: none;
+}
+
+pre.shwv-web-server-config {
+    background: #f0f0f1;
+    width: auto;
+    padding-left: 1em;
+}
+
+.shwv-settings-p {
+        max-width: 50em;
+}

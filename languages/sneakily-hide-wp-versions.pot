@@ -1,0 +1,210 @@
+# Copyright (C) 2021 Ruminative WP
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Sneakily Hide WP Versions 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sneakily-hide-wp-versions\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-07-29T17:11:46+09:30\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Domain: sneakily-hide-wp-versions\n"
+
+#. Plugin Name of the plugin
+msgid "Sneakily Hide WP Versions"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://ruminativewp.com/plugins/sneakily-hide-wp-versions/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Hides the WordPress version everywhere it's displayed, including feed generator tags, static asset URLs, and load-styles.php and load-scripts.php."
+msgstr ""
+
+#. Author of the plugin
+msgid "Ruminative WP"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://ruminativewp.com/"
+msgstr ""
+
+#: shwv.php:TODO 
+msgid "Plugin activated"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "Plugin deactivated"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "Unable to detect your web server type, assuming you're using Apache"
+msgstr ""
+
+#. translators: %s: a web server (apache / nginx / etc)
+#: shwv.php:TODO
+msgid "Webserver detected: %s"
+msgstr ""
+
+#. translators: %s: a version number (2.0)
+#: shwv.php:TODO
+msgid "Fake version: %s"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "If you're using a caching plugin, clear your caches now"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "Dispatched fake WP upgrade action"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "Got core update action, bumping fake WP version"
+msgstr ""
+
+#. translators: %s: a version number
+#: shwv.php:TODO`
+msgid "Increased the fake version with core upgrade, new value = %s"
+msgstr ""
+
+#. translators: %s: a version number
+#: shwv.php:TODO
+msgid "old fake version: %s"
+msgstr ""
+
+#. translators: %s: a floating-point (real) number - 1.0
+#: shwv.php:TODO
+msgid "bump amount: %s"
+msgstr ""
+
+#. translators: %s: a version number
+#: shwv.php:TODO
+msgid "new fake version: %s"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "Settings"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "You do not have the required permissions to perform this action"
+msgstr ""
+
+#. translators: %s: a version number
+#: shwv.php:TODO
+msgid "Increased the fake version, new value = %s"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "Please insert these rules in your .htaccess file or Apache config. If you're using a caching plugin, clear your caches after reloading Apache."
+msgstr ""
+
+#: shwv.php:TODO
+msgid "If %1$s, after %2$s"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "We've detected you're using:"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "Force Increase the Fake Version Number"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "Software"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "Plugin Fake Versions"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "Fake WordPress version"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "You are using:"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "Web Server"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "WordPress version"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "mod_rewrite is present"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "mod_rewrite appears to be missing - mod_rewrite is required for this plugin to work"
+msgstr ""
+
+#: shwv.php:TODO
+msgid "mod_rewrite appears to be missing, but is required for this plugin to work. Unless mod_rewrite is already installed and enabled, please enable mod_rewrite, then deactivate and reactivate this plugin."
+msgstr ""
+
+# shwv.php:TODO
+msgid "After increasing the version number, remember to clear WordPress cache if you're using a caching plugin. If you view your site's source code, the new version number might not appear until you reload without browser cache - either hold down the Control key and press F5, or hold down Shift and click the reload button."
+msgstr ""
+
+# shwv.php:TODO
+msgid "Your site is not using mod_rewrite permalinks - permalinks are required for this plugin to work."
+msgstr ""
+
+# sdfsdf
+msgid "We need to create some filesystem files, but permissions aren't set to allow this. Please enter your web server connection details."
+msgstr ""
+
+# sdfsdf
+msgid "Couldn't initialize WP_Filesystem. This shouldn't happen"
+msgstr ""
+
+# gdsfgdgf
+# translators: %s: WPMU_PLUGIN_DIR
+msgid "Couldn't write mu plugin - please make sure the mu-plugins directory (%s) is writable or can be created - ask your system administrator if needed."
+msgstr ""
+
+msgid "Saved mu plugin."
+msgstr ""
+
+msgid "Saved mu plugin. Activation completed."
+msgstr ""
+
+# sdfsdf
+msgid "Please insert these rules in your Nginx config"
+msgstr ""
+
+# dfsogihosdifg
+# translators: %s: 1. 'server {' 2. 'location /' 3. 'try_files'
+msgid "Please insert the following rules into your Nginx config within a %1$s block, and before your %2$s block (this is probably a block with a %3$s directive), and reload Nginx. If you're using a caching plugin, clear your caches after reloading nginx"
+msgstr ""
+
+# sdoushdg
+msgid "Note: if you manually upgrade WordPress, deactivate this plugin before and activate it after, and force increase the fake version after the upgrade is complete."
+msgstr ""
+
+# sdojfhsodf
+msgid "Remember to remove the rules if you deactivate this plugin."
+msgstr ""
+
+# sdfsdf
+# translators: %s: WPMU_PLUGIN_DIR
+msgid "Failed to create mu-plugins directory (%s). Please check the permissisions so this directory exists or can be created, and deactivate/reactivate the plugin"
+msgstr ""
+
+msgid "To deactivate, we need to remove the must-use plugin that was created, but we need credentials to do this."
+msgstr ""
+
+# translators: %s: file path
+msgid "Couldn't initialize WP_Filesystem. This shouldn't happen. Not deactivating - please delete Sneakily Hide WP Versions plugin manually, AND remove the must-use plugin (%s) from the MU-plugins directory"
+msgstr ""
+
